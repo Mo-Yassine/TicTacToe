@@ -263,6 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fields: []
+  isPlayerOneTurn: 1
   humanplayer: 1
   board: {fileID: 6838302860672110148}
   playerX: {fileID: 6838302862257369860}

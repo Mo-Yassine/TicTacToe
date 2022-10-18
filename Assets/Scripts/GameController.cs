@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Net;
 using UnityEngine;
 using Unity.MLAgents.Actuators;
+using miniMax;
 
 public class GameController : MonoBehaviour
 {
@@ -34,7 +36,7 @@ public class GameController : MonoBehaviour
         initializeField();
 
         //setupField();
-        miniMax = GetComponent<MiniMax>();
+        miniMax = new MiniMax();
     }
 
     // Update is called once per frame
@@ -87,14 +89,53 @@ public class GameController : MonoBehaviour
                 playerX.RequestDecision();
                 isPlayerOneTurn = false;
             }
+            if (checkWinner() == 1)
+            {
+                Debug.Log("Player X wins");
+                playerX.Win();
+                playerO.Lose();
+                EndEpisodes();
+                initializeField();
+                isPlayerOneTurn = false;
+                return;
+            }
+            if (checkWinner() == 2)
+            {
+                Debug.Log("Player O wins");
+                playerX.Lose();
+                playerO.Win();
+                EndEpisodes();
+                initializeField();
+                isPlayerOneTurn = true;
+                return;
+            }
+            if (checkWinner() == 3)
+            {
+                Debug.Log("Draw");
+                if (isPlayerOneTurn)
+                {
+                    playerX.Draw(true);
+                    playerO.Draw(false);
+                    isPlayerOneTurn = true;
+                }
+                else if (!isPlayerOneTurn)
+                {
+                    playerX.Draw(false);
+                    playerO.Draw(true);
+                    isPlayerOneTurn = false;
+                }
+                EndEpisodes();
+                initializeField();
+                return;
+            }
         }
         else
         {
+            var bestMove = miniMax.findBestMove(board.getBoard());
+
             //var bestMove = miniMax.findBestMove(board.getBoard());
-            //Debug.Log(bestMove.row + " " + bestMove.col);
-            //playField(((bestMove.row * 3) + bestMove.col), 2); // 2 = O
-            //print the board
-            //board.printBoard();
+            Debug.Log(bestMove.row + " " + bestMove.col);
+            playField(((bestMove.row * 3) + bestMove.col), 2); // 2 = O
             playerO.RequestDecision();
             isPlayerOneTurn = true;
         }

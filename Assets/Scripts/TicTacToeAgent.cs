@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel.Design.Serialization;
-using System.Diagnostics;
-using System.Net.Sockets;
-using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
+using Unity.MLAgents.Policies;
 using Unity.MLAgents.Sensors;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 public class TicTacToeAgent : Agent
 {
@@ -15,7 +14,6 @@ public class TicTacToeAgent : Agent
     public BoardManager boardManager;
 
     public int player;
-
     public override void CollectObservations(VectorSensor sensor)
     {
         foreach (var field in gameController.Fields)
@@ -35,7 +33,7 @@ public class TicTacToeAgent : Agent
 
     public void Win()
     {
-        AddReward(0.8f);
+        AddReward(1f);
         //EndEpisode();
     }
 
@@ -53,7 +51,7 @@ public class TicTacToeAgent : Agent
         }
         else
         {
-            AddReward(0.8f);
+            AddReward(-0.5f);
         }
         //EndEpisode();
     }

@@ -236,7 +236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -301,11 +301,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862257369860, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
-      value: 0
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838302862257369860, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
+      propertyPath: heuristicMethod
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862257369863, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_Model
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838302862257369863, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862257369863, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
@@ -317,11 +325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886596, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: humanplayer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886596, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: isPlayerOneTurn
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886597, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_RootOrder
@@ -373,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
-      value: 0
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504216, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
@@ -386,7 +394,11 @@ PrefabInstance:
     - target: {fileID: 6838302862471504218, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 5022602860645237092, guid: b5d8c316cdb8c4222868d274df997b2e, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838302862471504218, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504218, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
       value: 27
@@ -506,7 +518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -643,7 +655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -780,7 +792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -917,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -1054,7 +1066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -1285,7 +1297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -1386,7 +1398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.6910181, y: -0.0021683273, z: 0.0020728617, w: 0.72283125}
-  m_LocalPosition: {x: 94.34494, y: 35.51185, z: 17.350298}
+  m_LocalPosition: {x: 96.215294, y: 44.646103, z: 17.601112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1510,7 +1522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -1651,7 +1663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -1788,7 +1800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -1925,7 +1937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -2062,7 +2074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -2199,7 +2211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -2336,7 +2348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
@@ -2473,7 +2485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862425886617, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838302862471504197, guid: e7564d122433a4d68a1e07a02b134f2d, type: 3}
       propertyPath: MaxStep
